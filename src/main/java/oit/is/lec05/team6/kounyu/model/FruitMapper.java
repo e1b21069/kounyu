@@ -15,4 +15,6 @@ public interface FruitMapper {
   @Select("select ID, NAME,PRICE from FRUIT WHERE ID = #{id}")
   Fruit selectById(int id);
 
+  @Delete("delete from Fruit where id = #{id}")
+  boolean deleteById(int id);
 }
