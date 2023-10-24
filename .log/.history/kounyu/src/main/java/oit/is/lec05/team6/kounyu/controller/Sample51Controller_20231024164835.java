@@ -56,7 +56,7 @@ public class Sample51Controller {
   }
 
   @PostMapping("step5")
-  public String Sample55(@RequestParam Integer id, @RequestParam String name, @RequestParam Integer price, ModelMap model) {
+  public String Sample55(@RequestParam Integer id, @RequestParam String name, @RequestParam Integer price, ModelMap modelMap) {
     System.out.println("step5");
     System.out.println(id);
     System.out.println(name);
