@@ -17,7 +17,4 @@ public interface FruitMapper {
 
   @Delete("delete from Fruit where id = #{id}")
   boolean deleteById(int id);
-
-  @Update("update fruit set name=#{name},price=#{price} where id = #{id}")
-  void updateById(Fruit fruit);
 }
